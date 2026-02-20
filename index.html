@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <div class="login-card">
+      <div class="login-header">
+        <h1>📚 Student Dashboard</h1>
+        <p>Welcome! Please enter your name to continue</p>
+      </div>
+      <div class="login-form">
+        <input 
+          type="text" 
+          id="username" 
+          placeholder="Enter your name" 
+          autocomplete="off"
+          onkeypress="if(event.key === 'Enter') login()"
+        >
+        <button onclick="login()" class="login-btn">
+          <span>Login</span>
+          <span>→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
